@@ -1,0 +1,15 @@
+CREATE TABLE places
+(
+	id             INT PRIMARY KEY AUTO_INCREMENT,
+	sector         VARCHAR(40) NOT NULL,
+	name           VARCHAR(80) NOT NULL,
+	rating         DECIMAL(2, 1),
+	workingHours   VARCHAR(80),
+	address        VARCHAR(80) NOT NULL,
+	specialization VARCHAR(120),
+	phone          VARCHAR(12),
+	hasAlcohol     BOOL,
+	hasDelivery    BOOL,
+	hasPark        BOOL,
+	coordinates    VARCHAR(80) NOT NULL
+);
